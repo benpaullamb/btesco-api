@@ -28,18 +28,6 @@ const getProductPage = async (url) => {
   }
 };
 
-const getUnit = (text) => {
-  if (text.endsWith('g')) {
-    return 'g';
-  } else if (text.endsWith('ml')) {
-    return 'ml';
-  } else if (text.endsWith('each')) {
-    return '1';
-  } else if (text.endsWith('litre')) {
-    return 'l';
-  }
-};
-
 const getCategory = ($) => {
   let categories = [];
   $('a.beans-breadcrumb__list-item-link').each(function () {
